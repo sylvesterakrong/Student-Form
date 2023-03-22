@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Form</title>
     <link rel="stylesheet" href="form.css" /> 
-    
+    <script src="form.js"></script>
 
 </head>
 <body>
@@ -24,13 +24,17 @@
     <div class="form">
 
         <div class="form-left">
-            <form action="" method="get">
+            <form>
 
             <div class="questions">
                     <!--name-->
                 <div class="name">
                     <label for="name">Please enter your name: </label>
-                    <input type="text" class="input" id="name" required>
+                    <input 
+                    type="text" 
+                    class="input" 
+                    id="name" 
+                    required>
                 </div><br>
                     <!--end-->
 
@@ -48,7 +52,11 @@
                     <!--email-->
                 <div class="email">
                     <label for="email">Please enter your email: </label>
-                    <input type="email" class="input" id="email" required>
+                    <input 
+                    type="email" 
+                    class="input" 
+                    id="email" 
+                    required>
                 </div><br>
                     <!--end-->
 
@@ -57,22 +65,52 @@
                 <!--interested in which parts of the school section-->
                 <div class="interests">
                     <p>Which parts of the school did you like?: </p>
-                        <input type="radio" id="Students" class="radio" value="Students" required>
+                        <input 
+                        type="radio" 
+                        id="Students" 
+                        class="radio" 
+                        value="Students" 
+                        required>
                         <label for="Students">Students</label><br>
         
-                        <input type="radio" id="Location" class="radio"  value="Location" required>
+                        <input 
+                        type="radio" 
+                        id="Location" 
+                        class="radio"  
+                        value="Location" 
+                        required>
                         <label for="Location">Location</label><br>
         
-                        <input type="radio" id="Campus" class="radio" value="Campus" required>
+                        <input 
+                        type="radio" 
+                        id="Campus" 
+                        class="radio" 
+                        value="Campus" 
+                        required>
                         <label for="Campus">Campus</label><br>
         
-                        <input type="radio" id="Atmosphere" class="radio" value="Atmosphere" required>
+                        <input 
+                        type="radio" 
+                        id="Atmosphere" 
+                        class="radio" 
+                        value="Atmosphere" 
+                        required>
                         <label for="Atmosphere">Atmosphere</label><br>
 
-                        <input type="radio" id="DormRooms" class="radio" value="DormRooms" required>
+                        <input 
+                        type="radio" 
+                        id="DormRooms" 
+                        class="radio" 
+                        value="DormRooms" 
+                        required>
                         <label for="DormRooms">Dorm Rooms</label><br>
 
-                        <input type="radio" id="Sports" class="radio" value="Sports" required>
+                        <input 
+                        type="radio" 
+                        id="Sports" 
+                        class="radio" 
+                        value="Sports" 
+                        required>
                         <label for="Sports">Sports</label><br>
                 </div>     
                     <!--end-->
@@ -81,16 +119,36 @@
                     <!--interested in the school section-->
                 <div class="interests">
                     <p>How did you become interested in the school?: </p>
-                        <input type="radio" id="Friends" name="interests" value="Friends" required>
+                        <input 
+                        type="radio" 
+                        id="Friends" 
+                        name="interests" 
+                        value="Friends" 
+                        required>
                         <label for="Friends">Friends</label><br>
 
-                        <input type="radio" id="Television" name="interests" value="Television" required>
+                        <input 
+                        type="radio" 
+                        id="Television" 
+                        name="interests" 
+                        value="Television" 
+                        required>
                         <label for="Television">Television</label><br>
 
-                        <input type="radio" id="Internet" name="interests" value="Internet" required>
+                        <input 
+                        type="radio" 
+                        id="Internet" 
+                        name="interests" 
+                        value="Internet" 
+                        required>
                         <label for="Internet">Internet</label><br>
 
-                        <input type="radio" id="Other" name="interests" value="Other" required> 
+                        <input 
+                        type="radio" 
+                        id="Other" 
+                        name="interests" 
+                        value="Other" 
+                        required> 
                         <label for="Other">Other</label><br><br>
                 </div>
                     <!--end-->
@@ -101,13 +159,25 @@
                 <!--additional comments-->
             <div class="comment">
                 <div>
-                    <label for="name">Please we would be glad if you could tell us about the others you were interested in: </label><br>
-                    <textarea type="text" class="input-comment" id="others" ></textarea>
+                    <label 
+                    for="name">
+                    Please we would be glad if you could tell us about the others you were interested in: 
+                    </label><br>
+                    <textarea 
+                    type="text" 
+                    class="input-comment" 
+                    id="others" ></textarea>
                  </div><br>
     
                 <div>
-                    <label for="name">Are there other comments you would like to make? </label><br>
-                    <textarea type="text" class="input-comment" id="others" ></textarea>
+                    <label 
+                    for="name">
+                    Are there other comments you would like to make? 
+                    </label><br>
+                    <textarea 
+                    type="text" 
+                    class="input-comment" 
+                    id="others" ></textarea>
                 </div><br>
             </div>
                 <!--end-->
@@ -115,8 +185,13 @@
 
                 <!--buttons-->
             <div>
-                <button type="submit" class="button">SUBMIT</button>
-                <button type="reset" class="button">RESET</button>
+                <button 
+                onclick="submit()" 
+                type="submit" 
+                class="button">SUBMIT</button>
+                <button 
+                type="reset" 
+                class="button">RESET</button>
             </div>
                 <!--end-->
 
