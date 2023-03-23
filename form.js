@@ -1,6 +1,8 @@
-<script>
-    function submit() {
-    alert("Your form has been submitted!")
-    }
+window.alert('Thank you for making time to fill this form. Please proceed!');
 
-</script>
+Element.addEventListener(submit, submit);
+function submit(){
+    alert('form submitted');
+}
+
+
